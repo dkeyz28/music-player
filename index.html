@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="musicplayer.css">
+</head>
+<body>
+  <!-- Page starts -->
+  <!-- Playlist at far left -->
+  <div class="playlist">
+    <h3>Playlist</h3>
+    <ul id="playlist"></ul>
+  </div>
+
+  <!-- Player at center -->
+  <div class="player">
+    <img src="cover.jpg" alt="Album Cover" class="cover">
+
+    <div class="song-info">
+      <h2 id="title">Song Title</h2>
+      <p id="artist">Artist Name</p>
+    </div>
+
+    <input type="range" id="progress" value="0" min="0" max="100" step="1">
+
+    <div class="controls">
+      <button id="prev">
+         <img src="images/previous-icon.svg" alt="">
+      </button>
+      <button id="play">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+      <button id="next">
+        <img src="images/3695045_music_next_next button_player_icon.svg" alt="">
+      </button>
+    </div>
+  </div>
+
+  <script src="musicplayer.js"></script>
+</body>
+</html>
